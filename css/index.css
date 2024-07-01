@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+}
+/* El menú con barra de despliegue */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    float: right;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    display: flex;
+}
+
+.logo-placeholder {
+    width: 50px; /* Ajusta este ancho según el tamaño del logo */
+    height: 50px; /* Ajusta este alto según el tamaño del logo */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.submenu > li > a {
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+}
+
+.submenu > li > a:hover {
+    background-color: #f0f0f0;
+    
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn.primary {
+    background-color: black;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn.primary:hover, .btn.secondary:hover {
+    opacity: 0.8;
+}
+
+/* La imagen que esta en el cuerpo a la derecha */
+.caja2{
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 0;
+    display: block;
+    float: right;
+    border: 2px solid white;
+}
+
+/* El texto debajo de Puno y Titicaca */
+h2{
+    text-align: center;
+    color: rgb(235, 109, 109);
+    font-weight: 800;
+}
+.p1 { 
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    border: 50px solid rgb(255, 255, 255);
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+}
+
+.information {
+    cursor: pointer;
+}
+.btn.third {
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+   
+}
+
+.btn.third:hover {
+    opacity: 0.8;
+}
+
+/* Las 6 imagenes */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container img {
+    width: 210px; 
+    height: 210px; 
+    margin: 0 10px; /* Espaciado entre las imágenes */
+} 
+
+
+/* Formulario */
+form {
+    backdrop-filter: rgb(245, 241, 241);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 0 5px rgb(255, 253, 253);
+    text-align: center;
+    
+    
+}
+
+form h2{
+    font-size: 20px;
+    color: #181717;
+    margin-bottom: 35px;
+}
+
+input {
+    padding: 17px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid grey;
+    margin-bottom: 30px;
+    outline: none;
+    color: #080808;
+    font-size: 16px;
+    
+}
+
+/* El boton de crea tu perfil */
+
+.btn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Pie de pagina */
+footer{
+    width: 1320px;
+    position: absolute;
+    bottom: 0;
+    position: relative;   
+    height: 300px;
+    padding: 40px;
+    background-color: rgb(216, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-direction: column;
+}
+
+.social-icons-container, .footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.social-icon{
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+.social-icon:hover{
+    background-color: #080808;
+    filter: invert(1);}
+
+
+
+.footer-menu-container{
+    list-style-type: none;
+    color: rgb(78, 78, 77);
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+        
+.copyright{
+    color: rgb(78, 78, 77);
+    opacity: 0.3;
+    text-align: center;
+}
+footer h4 {
+    text-align: center;
+}
+
+
+

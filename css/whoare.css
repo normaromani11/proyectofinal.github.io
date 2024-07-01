@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0px;    
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    float: right;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    display: flex;
+}
+
+.logo-placeholder {
+    width: 50px; /* Ajusta este ancho según el tamaño del logo */
+    height: 50px; /* Ajusta este alto según el tamaño del logo */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.submenu > li > a {
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+}
+
+.submenu > li > a:hover {
+    background-color: #f0f0f0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn.primary {
+    background-color: black;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn.primary:hover,
+.btn.secondary:hover {
+    opacity: 0.8;
+}
+
+
+
+.banner {
+    width: 130px;
+    height: 500px;
+    justify-content: center ;
+}
+
+main{
+    display: flex;
+ }
+
+
+ aside{
+     width: 20%;
+ }
+ 
+ h4 {color: blue;}
+ 
+ aside a{
+     margin: 10px;
+     display: inline-block;
+ }
+ 
+ section {
+     width: 80%;
+     display: flex;
+     display: inline; }
+ 
+ article {
+     margin: 10px;
+     
+    }
+ 
+ 
+ article img {
+    
+    border-radius: 10px;
+ }
+article p{
+         text-align: justify;} 
+
+
+
+::placeholder {
+    color: grey;
+    }
+        
+.btn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+        }
+        
+footer{
+    width: 1320px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    position: relative;   
+    height: 300px;
+    padding: 40px;
+    background-color: rgb(216, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-direction: column;
+        }
+        
+.social-icons-container, .footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+        }
+.social-icon{
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    margin: 20px;
+        }
+        
+.social-icon:hover{
+    background-color: #080808;
+    filter: invert(1);}
+        
+        
+        
+.footer-menu-container{
+    list-style-type: none;
+    color: rgb(78, 78, 77);
+    font-size: 18px;
+        }
+        
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+        }
+.menu-item:hover{
+    opacity: 1;
+        }
+        
+.copyright{
+    color: rgb(78, 78, 77);
+    opacity: 0.3;
+    text-align: center;
+        }
+footer h4 {
+    text-align: center;
+        }
